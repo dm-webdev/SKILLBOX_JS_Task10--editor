@@ -1,0 +1,141 @@
+.body,
+.editor {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.body {
+  color: #A52A2A;
+  background-color: #F5F5DC;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.editor {  
+  position: relative;
+  width: 90%;
+}
+
+.heading,
+.editor__heading {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.editor__container {
+  margin-bottom: 1rem;
+  padding: 15px;
+  width: 100%;
+  min-height: 50vh;
+  border: 1.5px solid #50C878;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.btn-group {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid #50C878;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px 2px #50C878;
+}
+
+.btn:disabled:hover {
+  box-shadow: none;
+}
+
+.choice-form {
+  display: flex;
+}
+
+.save-select__label {
+  display: flex;
+  flex-flow: column;
+  margin-right: 10px;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.save-select__main {
+  padding: 5px;
+  border: 1px solid #50C878;
+  border-radius: 5px;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  left: 30%;
+  padding: 10px;
+  border: 1px solid #50C878;
+  border-radius: 5px;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F5F5DC;
+  background-color: #A52A2A;
+}
+
+.message_on {
+  animation-name: message_on;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes message_on {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.message_off {
+  animation-name: message_off;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+@keyframes message_off {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* .select__option_del {
+  margin-left: 10px;
+  padding: 0.5rem;
+  background-image: url('img/close.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+} */

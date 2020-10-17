@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB API</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="body">
+  <h1 class="heading">10. WEB API</h1>
+
+  <section class="editor">
+    <h2 class="editor__heading">Текстовый редактор</h2>
+
+    <div class="editor__container">
+      <h3>Поле для ввода и редактирования текста</h3>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, possimus voluptas facilis velit sapiente, non corporis omnis sit dolores error fugiat tempore eveniet repellat, explicabo eos ut tempora accusamus debitis.
+      </p>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn edit__btn" type="button">редактировать</button>
+
+      <button class="btn save__btn" type="button" disabled>сохранить</button>
+
+      <button class="btn cancel__btn" type="button" disabled>отменить</button>
+
+      <button class="btn clean__btn" type="button">очистить все</button>
+
+      <form class="choice-form" onsubmit="return false">
+        <label class="save-select__label"> Выбирите версию
+          <select class="save-select__main">
+            <option disabled>версия</option>
+            <option value="variantOne">вариант 1</option>
+            <option value="variantToo">вариант 2</option>
+          </select>
+        </label>
+
+        <button class="btn choice__btn" type="button">выбрать</button>
+      </form>
+    </div>
+    <div class="message" hidden>Версия сохранена. В хранилище сохраняется не более десяти экземпляров</div>
+  </section>
+</body>
+
+</html>
